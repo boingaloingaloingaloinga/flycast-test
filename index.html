@@ -11,10 +11,10 @@
   <script>
     EJS_player = '#game';
     EJS_core = 'dreamcast'; 
-    EJS_gameUrl = 'path/to/your/game.chd';
+    EJS_gameUrl = "https://dl.dropboxusercontent.com/scl/fi/199i3k4kgl35qeyvv9lmf/Sonic-Adventure.cdi?rlkey=02vwio6qhykxk4szwj703y1to&st=h4wt2s7a&dl=0";
     
     // Explicitly path the local flycast WASM files
-    EJS_pathtodata = 'https://jsdelivr.net'; 
+    EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/'; 
     EJS_coreUrl = './cores/flycast_libretro.js'; 
 
     // Point EmulatorJS to your dumped BIOS files
@@ -23,5 +23,5 @@
         'dc_flash.bin': './data/bios/dc_flash.bin'
     };
   </script>
-  <script src="https://jsdelivr.netloader.js"></script>
+  <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
 </body>

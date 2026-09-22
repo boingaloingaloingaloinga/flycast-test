@@ -1,0 +1,27 @@
+<head>
+  <script src="coi-serviceworker.min.js"></script>
+  <title>Dreamcast Emulator Test</title>
+</head>
+
+<body>
+  <div style="width:640px;height:480px">
+    <div id="game"></div>
+  </div>
+
+  <script>
+    EJS_player = '#game';
+    EJS_core = 'dreamcast'; 
+    EJS_gameUrl = 'path/to/your/game.chd';
+    
+    // Explicitly path the local flycast WASM files
+    EJS_pathtodata = 'https://jsdelivr.net'; 
+    EJS_coreUrl = './cores/flycast_libretro.js'; 
+
+    // Point EmulatorJS to your dumped BIOS files
+    EJS_biosUrl = {
+        'dc_boot.bin': './data/bios/dc_boot.bin',
+        'dc_flash.bin': './data/bios/dc_flash.bin'
+    };
+  </script>
+  <script src="https://jsdelivr.netloader.js"></script>
+</body>
